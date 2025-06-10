@@ -1,0 +1,28 @@
+---
+title: "Building Neocortexa, a Behavior-Driven App and Website Blocker"
+publishedAt: "2025-06-10"
+summary: "Development of an intelligent content blocker that syncs with WHOOP fitness data to unlock websites as rewards for meeting exercise goals."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+team:
+  - name: "Adam Leigh"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/adam-leigh-developer/"
+---
+## Overview
+Development of an intelligent content blocker that syncs with health data from WHOOP devices to create a unique reward system - unlocking websites like YouTube and other favorites only after meeting exercise goals.
+## Key Features
+- **WHOOP Integration**: Seamlessly connects with WHOOP fitness trackers to monitor sleep quality and exercise data based on time spent in specific heart rate zones throughout the day - making the system uncheatable unlike step-based trackers.
+- **Chrome Extension with Live Sync**: Built a Chrome extension that maintains real-time synchronization with browsing history, enabling instant response to user behavior patterns.
+- **Todoist Integration**: Connects with Todoist to track in-progress action items, allowing the AI to understand current priorities and work context.
+- **Intelligent AI Monitoring**: An AI system watches Chrome history live, flagging potential distractions and deviations from main priorities. It dynamically blocks distracting websites and unlocks reward sites based on fitness goal achievement from WHOOP data.
+## Technologies Used
+- **Next.js**: For building the web application interface.
+- **Manifest.json**: For Chrome extension configuration and permissions.
+- **Supabase**: For backend database and real-time data synchronization.
+- **AI Integration**: For intelligent pattern recognition and distraction detection.
+## Challenges and Learnings
+The sheer volume of data generated from a single day of internet browsing presented significant challenges. With constant context switching between tabs, formatting this data efficiently became crucial. The solution required careful optimization to avoid sending thousands of API calls to the backend, instead transmitting only essential information needed for the AI to create a contextual audit log of user behavior and match it against Todoist tasks.
+## Outcome
+Neocortexa demonstrates the untapped potential of modern technology integration. By combining fitness tracking, productivity tools, and intelligent AI monitoring, it creates a unique ecosystem that promotes both physical health and digital wellness. This project reveals how profoundly we can leverage existing technologies in novel ways to address modern challenges around focus, health, and productivity.

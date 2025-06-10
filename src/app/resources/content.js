@@ -55,10 +55,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building bridges between AGI and human flourishing</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">Neocortexa</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
@@ -125,9 +125,9 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "FVA Advisory",
+        timeframe: "2024 - 2025",
+        role: "AI Integration Engineer",
         achievements: [
           <>
             Developed a design system that unified the brand across multiple platforms, improving
@@ -147,12 +147,24 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Pretoria",
-        description: <>Studied software engineering.</>,
+        name: "Bachelor of Arts - Saint Augustine College of South Africa",
+        description: <>Triple-majored in Political Science, Philosophy, and Psychology. Graduated at the top of the college with 12 distinctions out of 14 modules completed. Interdisciplinary humanities program emphasizing critical thinking, ethical leadership, and preparation for careers in education, politics, government, media, law, and business.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Full-Stack Engineer - Codecademy",
+        description: <>Comprehensive career path covering JavaScript, Node.js, SQL, Express.js, React, and Test-Driven Development (TDD). Includes building full-stack web applications from front-end to back-end, working with APIs, databases, and deployment practices.</>,
+      },
+      {
+        name: "PCAP - Pearson Certified Associate in Python Programming",
+        description: <>Professional credential measuring intermediate-level Python programming skills including object-oriented programming (34% of exam), modules and packages, exception handling, string processing, and file operations. Validates ability to design, develop, debug, and refactor multi-module Python programs.</>,
+      },
+      {
+        name: "PCEP - Pearson Certified Entry-Level Python Programmer",
+        description: <>Entry-level certification validating foundational Python programming concepts including data types, containers, functions, conditions, loops, Python syntax, semantics, and runtime environment. Demonstrates readiness for junior developer roles and further Python studies.</>,
+      },
+      {
+        name: "PearsonVue Information Technology Specialist by Certiport",
+        description: <>Entry-level IT certification covering a broad range of topics including software development, database administration, networking and security, mobility and device management, and coding. Validates foundational IT skills sought after by employers across multiple technology domains.</>,
       },
     ],
   },
@@ -161,35 +173,35 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "TypeScript, React, Next",
+        description: <>Building type-safe, scalable applications with TypeScript and modern frameworks.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "React Native, Flutter, Lynx",
+        description: <>Developing backend APIs, automation scripts, and data processing pipelines with Python.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
