@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Sofware Engineer",
+  role: "Sofware Developer",
   avatar: "/images/avatar.jpg",
   email: "ai.adam.leigh@gmail.com",
   location: "Africa/Johannesburg", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -49,22 +49,35 @@ const social = [
   },
 ];
 
+{
+  /* <>Building workflows for a world where humans and AI create together.</> */
+  /* <>Engineering intelligent systems that reshape how we live and work.</> */
+}
 const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between AGI and human flourishing</>,
+  headline: (
+    <>Living on the cutting, bleeding edge of technological advancement.</>
+  ),
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Neocortexa</strong></>,
+    title: (
+      <>
+        Recent project: <strong className="ml-4">Neocortexa</strong>
+      </>
+    ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Adam, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Adam, a software developer at
+      <strong className="text-white"> The B4i Project</strong>, where I build AI
+      systems and full stack web applications. After hours, I experiment with AI
+      as a life-operating system — monitoring, reflecting, and optimizing
+      everything I do.
     </>
   ),
 };
@@ -90,9 +103,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Adam is a Johannesburg-based software engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. His work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Adam is a Johannesburg-based software engineer with a passion for
+        transforming complex challenges into simple, elegant design solutions.
+        His work spans digital interfaces, interactive experiences, and the
+        convergence of design and technology.
       </>
     ),
   },
@@ -103,25 +117,23 @@ const about = {
       {
         company: "The B4i Project",
         timeframe: "2025 - Present",
-        role: "Software Engineer",
+        role: "Software Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built an e-commerce platform called SAKEwinkel for OntbytSAKE, an
+            Afrikaans television show with millions of viewers that premieres
+            every Saturday morning on KykNet, with PayFast payment integration.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   // src: "/images/projects/project-01/cover-01.jpg",
+          //   src: "/images/projects/project-01/sakewinkel.png",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
@@ -130,12 +142,9 @@ const about = {
         role: "AI Integration Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Built a chatbot connected to a vector database trained on valuation
+            data, designed as an assistant for finance valuation experts to
+            perform client valuations.
           </>,
         ],
         images: [],
@@ -148,23 +157,62 @@ const about = {
     institutions: [
       {
         name: "Bachelor of Arts - Saint Augustine College of South Africa",
-        description: <>Triple-majored in Political Science, Philosophy, and Psychology. Graduated at the top of the college with 12 distinctions out of 14 modules completed. Interdisciplinary humanities program emphasizing critical thinking, ethical leadership, and preparation for careers in education, politics, government, media, law, and business.</>,
+        description: (
+          <>
+            Triple-majored in Political Science, Philosophy, and Psychology.
+            Graduated at the top of the college with 12 distinctions out of 14
+            modules completed. Interdisciplinary humanities program emphasizing
+            critical thinking, ethical leadership, and preparation for careers
+            in education, politics, government, media, law, and business.
+          </>
+        ),
       },
       {
         name: "Full-Stack Engineer - Codecademy",
-        description: <>Comprehensive career path covering JavaScript, Node.js, SQL, Express.js, React, and Test-Driven Development (TDD). Includes building full-stack web applications from front-end to back-end, working with APIs, databases, and deployment practices.</>,
+        description: (
+          <>
+            Comprehensive career path covering JavaScript, Node.js, SQL,
+            Express.js, React, and Test-Driven Development (TDD). Includes
+            building full-stack web applications from front-end to back-end,
+            working with APIs, databases, and deployment practices.
+          </>
+        ),
       },
       {
         name: "PCAP - Pearson Certified Associate in Python Programming",
-        description: <>Professional credential measuring intermediate-level Python programming skills including object-oriented programming (34% of exam), modules and packages, exception handling, string processing, and file operations. Validates ability to design, develop, debug, and refactor multi-module Python programs.</>,
+        description: (
+          <>
+            Professional credential measuring intermediate-level Python
+            programming skills including object-oriented programming (34% of
+            exam), modules and packages, exception handling, string processing,
+            and file operations. Validates ability to design, develop, debug,
+            and refactor multi-module Python programs.
+          </>
+        ),
       },
       {
         name: "PCEP - Pearson Certified Entry-Level Python Programmer",
-        description: <>Entry-level certification validating foundational Python programming concepts including data types, containers, functions, conditions, loops, Python syntax, semantics, and runtime environment. Demonstrates readiness for junior developer roles and further Python studies.</>,
+        description: (
+          <>
+            Entry-level certification validating foundational Python programming
+            concepts including data types, containers, functions, conditions,
+            loops, Python syntax, semantics, and runtime environment.
+            Demonstrates readiness for junior developer roles and further Python
+            studies.
+          </>
+        ),
       },
       {
         name: "PearsonVue Information Technology Specialist by Certiport",
-        description: <>Entry-level IT certification covering a broad range of topics including software development, database administration, networking and security, mobility and device management, and coding. Validates foundational IT skills sought after by employers across multiple technology domains.</>,
+        description: (
+          <>
+            Entry-level IT certification covering a broad range of topics
+            including software development, database administration, networking
+            and security, mobility and device management, and coding. Validates
+            foundational IT skills sought after by employers across multiple
+            technology domains.
+          </>
+        ),
       },
     ],
   },
@@ -174,7 +222,12 @@ const about = {
     skills: [
       {
         title: "TypeScript, React, Next",
-        description: <>Building type-safe, scalable applications with TypeScript and modern frameworks.</>,
+        description: (
+          <>
+            Building type-safe, scalable applications with TypeScript and modern
+            frameworks.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
@@ -193,7 +246,12 @@ const about = {
       },
       {
         title: "React Native, Flutter, Lynx",
-        description: <>Developing backend APIs, automation scripts, and data processing pipelines with Python.</>,
+        description: (
+          <>
+            Developing backend APIs, automation scripts, and data processing
+            pipelines with Python.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
