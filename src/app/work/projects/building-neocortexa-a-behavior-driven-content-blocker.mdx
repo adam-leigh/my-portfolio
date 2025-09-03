@@ -3,26 +3,42 @@ title: "Building Neocortexa, a Behavior-Driven App and Website Blocker"
 publishedAt: "2025-06-10"
 summary: "Development of an intelligent content blocker that syncs with WHOOP fitness data to unlock websites as rewards for meeting exercise goals."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/neocortexa/cover-1.png"
+  - "/images/projects/neocortexa/cover-2.png"
 team:
   - name: "Adam Leigh"
     role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
+    avatar: "/images/avatar.png"
     linkedIn: "https://www.linkedin.com/in/adam-leigh-developer/"
 ---
-## Overview
-Development of an intelligent content blocker that syncs with health data from WHOOP devices to create a unique reward system - unlocking websites like YouTube and other favorites only after meeting exercise goals.
-## Key Features
-- **WHOOP Integration**: Seamlessly connects with WHOOP fitness trackers to monitor sleep quality and exercise data based on time spent in specific heart rate zones throughout the day - making the system uncheatable unlike step-based trackers.
-- **Chrome Extension with Live Sync**: Built a Chrome extension that maintains real-time synchronization with browsing history, enabling instant response to user behavior patterns.
-- **Todoist Integration**: Connects with Todoist to track in-progress action items, allowing the AI to understand current priorities and work context.
-- **Intelligent AI Monitoring**: An AI system watches Chrome history live, flagging potential distractions and deviations from main priorities. It dynamically blocks distracting websites and unlocks reward sites based on fitness goal achievement from WHOOP data.
-## Technologies Used
-- **Next.js**: For building the web application interface.
-- **Manifest.json**: For Chrome extension configuration and permissions.
-- **Supabase**: For backend database and real-time data synchronization.
-- **AI Integration**: For intelligent pattern recognition and distraction detection.
-## Challenges and Learnings
-The sheer volume of data generated from a single day of internet browsing presented significant challenges. With constant context switching between tabs, formatting this data efficiently became crucial. The solution required careful optimization to avoid sending thousands of API calls to the backend, instead transmitting only essential information needed for the AI to create a contextual audit log of user behavior and match it against Todoist tasks.
-## Outcome
-Neocortexa demonstrates the untapped potential of modern technology integration. By combining fitness tracking, productivity tools, and intelligent AI monitoring, it creates a unique ecosystem that promotes both physical health and digital wellness. This project reveals how profoundly we can leverage existing technologies in novel ways to address modern challenges around focus, health, and productivity.
+# Neocortexa
+
+I wanted to build a life operating system that could help me live in radical alignment with my values. Not another productivity app, but something that actually changes how you operate day to day.
+
+## The Problem
+
+Most goal-setting fails because there's no feedback loop between what you say you want and what you actually do. You set yearly objectives in January, maybe review them quarterly, and hope for the best. Meanwhile, your browser history—your actual revealed preferences—tells a completely different story.
+
+## How It Works
+
+Neocortexa observes your behavior and connects it to your stated intentions across four time horizons: daily, weekly, bi-monthly, and yearly.
+
+A Chrome extension tracks your browsing during deep work sessions. At lunch, an AI agent analyzes your morning against your weekly objectives and sends you a WhatsApp with specific guidance. Not generic advice—targeted insights based on what you actually spent time on versus what you said mattered.
+
+The system learns about you through voice transcripts. Instead of filling out forms about your goals, you just talk. Natural language about who you are, what you want, what patterns trip you up. The AI extracts objectives and saves them to a database, building a profile of your authentic intentions over time.
+
+Every day gets automatically documented. Sleep data from WHOOP, work patterns from Chrome history, your own reflections from voice notes—all synthesized into markdown files that create an searchable archive of your actual life, not just your planned life.
+
+## The Feedback Loop
+
+Saturday mornings, the system generates a weekly review and prompts you to reflect. It knows what you committed to, what you actually did, and where the gaps are. The AI uses this to surface patterns you'd miss: maybe you're most focused on Tuesdays, or maybe your afternoon energy drops correlate with specific types of work.
+
+This feeds into bi-monthly reviews that catch drift before it becomes permanent. Six realignment cycles per year instead of four quarterly check-ins.
+
+## Why This Matters
+
+Your attention is being optimized by every platform you use. The only defense is to become equally systematic about directing it toward what actually matters to you.
+
+Neocortexa isn't about perfect days or optimal performance. It's about building a system that knows what you want when you've forgotten, and helps you stay aligned with your deepest intentions rather than your most immediate impulses.
+
+It's technology in service of transformation, not distraction.

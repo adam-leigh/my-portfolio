@@ -8,7 +8,7 @@ const person = {
   },
   role: "Sofware Developer",
   avatar: "/images/avatar.jpg",
-  email: "ai.adam.leigh@gmail.com",
+  email: "thomasadam.leigh@gmail.com",
   location: "Africa/Johannesburg", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
@@ -74,10 +74,15 @@ const home = {
   subline: (
     <>
       I'm Adam, a software developer at
-      <strong className="text-white"> The B4i Project</strong>, where I build AI
-      systems and full stack web applications. After hours, I experiment with AI
-      as a life-operating system — monitoring, reflecting, and optimizing
-      everything I do.
+      <strong style={{ color: "var(--neutral-on-background-strong)" }}>
+        {" "}
+        The B4i Project
+      </strong>
+      , where I build agentic AI systems and full stack web applications.
+      <br />
+      <br />
+      After hours, I experiment with AI as a life-operating system; monitoring,
+      reflecting, and optimizing everything I do.
     </>
   ),
 };
@@ -96,17 +101,16 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://mail.google.com/mail/?view=cm&to=thomasadam.leigh@gmail.com",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Adam is a Johannesburg-based software engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        His work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        Adam writes code in Gauteng, South Africa and thinks a lot about
+        feedback loops. He's building AI that watches what you do, remembers
+        what you want, and helps close the gap between intention and action.
       </>
     ),
   },
@@ -127,13 +131,13 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          // {
-          //   // src: "/images/projects/project-01/cover-01.jpg",
-          //   src: "/images/projects/project-01/sakewinkel.png",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
+          {
+            // src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/sakewinkel/cover-1.jpeg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
         ],
       },
       {
@@ -159,11 +163,19 @@ const about = {
         name: "Bachelor of Arts - Saint Augustine College of South Africa",
         description: (
           <>
-            Triple-majored in Political Science, Philosophy, and Psychology.
-            Graduated at the top of the college with 12 distinctions out of 14
-            modules completed. Interdisciplinary humanities program emphasizing
-            critical thinking, ethical leadership, and preparation for careers
-            in education, politics, government, media, law, and business.
+            Triple-majored in Political Science, Philosophy, and Psychology. Top
+            of college, 12 distinctions. The kind of interdisciplinary thinking
+            that teaches you how to think, not what to think.
+          </>
+        ),
+      },
+      {
+        name: "React.gg - ui.dev",
+        description: (
+          <>
+            Interactive React mastery course. 90+ challenges, modern React v19
+            features. Challenge-based learning that gets you shipping production
+            apps.
           </>
         ),
       },
@@ -171,47 +183,33 @@ const about = {
         name: "Full-Stack Engineer - Codecademy",
         description: (
           <>
-            Comprehensive career path covering JavaScript, Node.js, SQL,
-            Express.js, React, and Test-Driven Development (TDD). Includes
-            building full-stack web applications from front-end to back-end,
-            working with APIs, databases, and deployment practices.
+            JavaScript, Node.js, React, the whole stack. Built applications from
+            database to deployment.
           </>
         ),
       },
       {
-        name: "PCAP - Pearson Certified Associate in Python Programming",
+        name: "PCAP - Pearson Certified Associate in Python",
         description: (
           <>
-            Professional credential measuring intermediate-level Python
-            programming skills including object-oriented programming (34% of
-            exam), modules and packages, exception handling, string processing,
-            and file operations. Validates ability to design, develop, debug,
-            and refactor multi-module Python programs.
+            Intermediate Python certification. Object-oriented programming,
+            modules, debugging.
           </>
         ),
       },
       {
-        name: "PCEP - Pearson Certified Entry-Level Python Programmer",
+        name: "PCEP - Pearson Certified Entry-Level in Python",
         description: (
           <>
-            Entry-level certification validating foundational Python programming
-            concepts including data types, containers, functions, conditions,
-            loops, Python syntax, semantics, and runtime environment.
-            Demonstrates readiness for junior developer roles and further Python
-            studies.
+            Entry-level Python fundamentals. Data types, functions, control
+            flow.
           </>
         ),
       },
       {
         name: "PearsonVue Information Technology Specialist by Certiport",
         description: (
-          <>
-            Entry-level IT certification covering a broad range of topics
-            including software development, database administration, networking
-            and security, mobility and device management, and coding. Validates
-            foundational IT skills sought after by employers across multiple
-            technology domains.
-          </>
+          <>Broad IT foundation covering development, databases, networking.</>
         ),
       },
     ],
@@ -221,11 +219,12 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "TypeScript, React, Next",
+        title: "Data Analysis & Big Data",
         description: (
           <>
-            Building type-safe, scalable applications with TypeScript and modern
-            frameworks.
+            Processing large-scale datasets with Python, SQL, and modern
+            analytics frameworks. Building data pipelines and extracting
+            actionable insights from complex information streams.
           </>
         ),
         // optional: leave the array empty if you don't want to display images
@@ -245,11 +244,12 @@ const about = {
         ],
       },
       {
-        title: "React Native, Flutter, Lynx",
+        title: "Web Development",
         description: (
           <>
-            Developing backend APIs, automation scripts, and data processing
-            pipelines with Python.
+            Crafting full-stack applications with TypeScript, React, Next.js,
+            and Node.js. Building scalable, type-safe systems from database
+            design to intuitive user interfaces.
           </>
         ),
         // optional: leave the array empty if you don't want to display images
@@ -262,6 +262,18 @@ const about = {
           // },
         ],
       },
+      {
+        title: "Agentic AI Systems",
+        description: (
+          <>
+            Architecting intelligent agents using local LLMs with knowledge
+            bases, human-in-the-loop feedback mechanisms, and self-improving
+            capabilities across diverse domains.
+          </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
     ],
   },
 };
@@ -269,7 +281,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Thoughts and musings...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
