@@ -69,7 +69,7 @@ const home = {
         Recent project: <strong className="ml-4">Neocortexa</strong>
       </>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/building-neocortexa-a-behavior-driven-content-blocker",
   },
   subline: (
     <>
